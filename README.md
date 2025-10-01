@@ -60,6 +60,9 @@ This tool is actively being improved. Known limitations include:
 - **Limited caching support**:  
   The tool stores the most recently fetched exchange rate data in a hidden sheet, which is used as the default reference on subsequent runs. However, it does not maintain a broader cache or allow offline access to historical data. Upon opening the workbook, the tool automatically updates to the previous day's rates (Current Date - 1) to ensure fresh data.
 
+- **Current Date minus 1**:  
+  (Current Date - 1) is due to a one-day lag in [xe.com](https://www.xe.com) exchange rates.
+
 Planned enhancements:
 - Investigate faster data sources or caching strategies
 - Refactor plotting logic for better performance
